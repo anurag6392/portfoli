@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6df3b0b87f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="contaner">
+            <nav>
+                <img src="logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX designer</p>
+                <h1>Hi, i'm <span>Anurag</span><br> From MPEC</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about--------------->
+    <div id="about">
+        <div class="continer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="background.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><b>About me</b></h1>
+                    <p>Hi, I’m Anurag Tiwari, a UX/UI designer with a passion for creating seamless and engaging user experiences. With over six months of experience, I specialize in designing intuitive interfaces for web and mobile applications, combining creativity and user-centric strategies.
+                        My work is driven by a belief that great design is not just visually appealing but also solves problems effectively. Beyond design, I’m inspired by nature and often find fresh perspectives while hiking or capturing moments through photography. 
+                        If you’re looking for a designer who can turn ideas into impactful designs, let’s connect. Explore my portfolio or drop me a message—I’d love to collaborate!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br> Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/ios apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2026 - current</span><br>UI/UX Design Training at MIT Institute</li>
+                                <li><span>2023 - 2025</span><br>Team lead at starApp LLC.</li>
+                                <li><span>2023 - 2024</span><br>Intership at ekart eCommerce.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>UI/UX Design Training at MIT Institute</li>
+                                <li><span>2026</span><br>B.tech MPEC KANPUR.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------services------- -->
+    <div id="services">
+        <div class="container">
+        <h1 class="sub-title">my services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>"I specialize in creating tailored websites that not only look stunning but also deliver seamless user experiences. Each design is crafted to reflect your brand's identity,
+                     engage your audience, and meet your business goals. From wireframes to responsive layouts, I ensure your website stands out in the digital landscape."</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>"I design user interfaces and experiences that prioritize functionality, aesthetics, and user satisfaction.
+                     By combining research-driven insights with innovative design techniques, I create digital products that are intuitive,
+                      engaging, and impactful."</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>"I specialize in designing mobile and web applications that prioritize exceptional user experiences and align with your business objectives. 
+                    From intuitive navigation to eye-catching visuals, I craft apps that engage users and elevate your brand."</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    </div>
+   <!---------portfolio------------ -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image1.jpg">
+                <div class="layer">
+                    <h3>Soical media App</h3>
+                    <p>the app connect you the talented people around the world.
+                        download it from play  store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image2.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>the app connect you the talented people around the world.
+                        download it from play  store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image3.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>the app connect you the talented people around the world.
+                        download it from play  store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+   <!----------contact--------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>anuragtiwari98745@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>6392173892</p>
+                <div class="social-icons">
+                    <a href="https://googlemail.com/anuragtiwari98745@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="LinkedIn: www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=anurag-tiwari-0a7016343"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instgram.com/anuragtiwari.02"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://hackerrank.com/anuragtiwari9871"><i class="fa-brands fa-hackerrank"></i></a>
+                    <a href="https://Teligram.com/AnuragTiwari"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="Sumbit" class="btn btn2">Sumbit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Anurag. made with<i class="fa-solid fa-heart"></i> by portfolio</p>
+    </div>
+   </div>
+    
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+        
+       </script>
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbweqgumu7Ippgd1IXk8AXajN7N0FQcQRQysmFEV3YY3VU2HYtDzg7rUoL3xxIs4RdI2/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
